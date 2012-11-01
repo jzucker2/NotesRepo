@@ -19,6 +19,10 @@
 		9707A3881640466F0064949E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9707A3871640466F0064949E /* ViewController.m */; };
 		9707A38B1640466F0064949E /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9707A3891640466F0064949E /* ViewController_iPhone.xib */; };
 		9707A38E1640466F0064949E /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9707A38C1640466F0064949E /* ViewController_iPad.xib */; };
+		97AB3F181642ECFD00E0DD3C /* SketchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AB3F161642ECFD00E0DD3C /* SketchViewController.m */; };
+		97AB3F191642ECFD00E0DD3C /* SketchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97AB3F171642ECFD00E0DD3C /* SketchView.xib */; };
+		97AB3F1D1642EE7300E0DD3C /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AB3F1B1642EE7300E0DD3C /* ListViewController.m */; };
+		97AB3F1E1642EE7300E0DD3C /* ListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97AB3F1C1642EE7300E0DD3C /* ListView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,12 @@
 		9707A3871640466F0064949E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9707A38A1640466F0064949E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		9707A38D1640466F0064949E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		97AB3F151642ECFD00E0DD3C /* SketchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchViewController.h; sourceTree = "<group>"; };
+		97AB3F161642ECFD00E0DD3C /* SketchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SketchViewController.m; sourceTree = "<group>"; };
+		97AB3F171642ECFD00E0DD3C /* SketchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SketchView.xib; sourceTree = "<group>"; };
+		97AB3F1A1642EE7300E0DD3C /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		97AB3F1B1642EE7300E0DD3C /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		97AB3F1C1642EE7300E0DD3C /* ListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +95,8 @@
 		9707A3741640466F0064949E /* NotebookApp */ = {
 			isa = PBXGroup;
 			children = (
-				97EB7D111642EB0A007F934A /* New Group */,
+				97AB3F141642ECE000E0DD3C /* Sketch View Controller */,
+				97EB7D111642EB0A007F934A /* List View Controller */,
 				9707A394164046A50064949E /* App Delegate */,
 				9707A395164046B30064949E /* Main Menu */,
 				9707A3751640466F0064949E /* Supporting Files */,
@@ -127,11 +138,24 @@
 			name = "Main Menu";
 			sourceTree = "<group>";
 		};
-		97EB7D111642EB0A007F934A /* New Group */ = {
+		97AB3F141642ECE000E0DD3C /* Sketch View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				97AB3F151642ECFD00E0DD3C /* SketchViewController.h */,
+				97AB3F161642ECFD00E0DD3C /* SketchViewController.m */,
+				97AB3F171642ECFD00E0DD3C /* SketchView.xib */,
 			);
-			name = "New Group";
+			name = "Sketch View Controller";
+			sourceTree = "<group>";
+		};
+		97EB7D111642EB0A007F934A /* List View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				97AB3F1A1642EE7300E0DD3C /* ListViewController.h */,
+				97AB3F1B1642EE7300E0DD3C /* ListViewController.m */,
+				97AB3F1C1642EE7300E0DD3C /* ListView.xib */,
+			);
+			name = "List View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +215,8 @@
 				9707A3851640466F0064949E /* Default-568h@2x.png in Resources */,
 				9707A38B1640466F0064949E /* ViewController_iPhone.xib in Resources */,
 				9707A38E1640466F0064949E /* ViewController_iPad.xib in Resources */,
+				97AB3F191642ECFD00E0DD3C /* SketchView.xib in Resources */,
+				97AB3F1E1642EE7300E0DD3C /* ListView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +230,8 @@
 				9707A37B1640466F0064949E /* main.m in Sources */,
 				9707A37F1640466F0064949E /* AppDelegate.m in Sources */,
 				9707A3881640466F0064949E /* ViewController.m in Sources */,
+				97AB3F181642ECFD00E0DD3C /* SketchViewController.m in Sources */,
+				97AB3F1D1642EE7300E0DD3C /* ListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

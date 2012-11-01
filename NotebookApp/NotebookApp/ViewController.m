@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 
+#import "SketchViewController.h"
+#import "ListViewController.h"
+
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @end
@@ -53,5 +56,26 @@
 }
 
 #pragma mark - Table View Delegate
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.row) {
+        case 0:
+        {
+            ListViewController *listView = [[ListViewController alloc] initWithNibName:@"ListView" bundle:nil];
+            [self.navigationController pushViewController:listView animated:YES];
+        }
+            break;
+        case 1:
+        {
+            SketchViewController *sketchView = [[SketchViewController alloc] initWithNibName:@"SketchView" bundle:nil];
+            [self.navigationController pushViewController:sketchView animated:YES];
+        }
+            break;
+        default:
+            break;
+    }
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 @end
